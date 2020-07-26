@@ -1,7 +1,0 @@
-2020-07-24 08:40:45.769 +02:00 [DBG] Hosting starting
-2020-07-24 08:40:46.113 +02:00 [VRB] [MQTTServer] Starting...
-2020-07-24 08:40:46.189 +02:00 [INF] [MQTTServer] MQTT Server is starting...
-2020-07-24 08:40:46.299 +02:00 [INF] Application started. Press Ctrl+C to shut down.
-2020-07-24 08:40:46.300 +02:00 [INF] Hosting environment: Production
-2020-07-24 08:40:46.300 +02:00 [INF] Content root path: C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Openluup.MqttBridge\bin\Debug\netcoreapp3.1
-2020-07-24 08:40:46.300 +02:00 [DBG] Hosting started
