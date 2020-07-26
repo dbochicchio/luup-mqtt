@@ -1,0 +1,396 @@
+2020-07-26 09:26:48.453 +02:00 [DBG] Hosting starting
+2020-07-26 09:26:48.827 +02:00 [VRB] [MQTTServer] Starting...
+2020-07-26 09:26:48.868 +02:00 [INF] [MQTTServer] MQTT Server is starting...
+2020-07-26 09:26:48.941 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-07-26 09:26:48.942 +02:00 [INF] Hosting environment: Production
+2020-07-26 09:26:48.942 +02:00 [INF] Content root path: C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\bin\Debug\netcoreapp3.1
+2020-07-26 09:26:48.945 +02:00 [DBG] Hosting started
+2020-07-26 09:28:50.450 +02:00 [DBG] Hosting starting
+2020-07-26 09:28:50.583 +02:00 [VRB] [MQTTServer] Starting...
+2020-07-26 09:28:50.596 +02:00 [INF] [MQTTServer] MQTT Server is starting...
+2020-07-26 10:16:00.156 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-07-26 10:16:00.156 +02:00 [INF] Hosting environment: Production
+2020-07-26 10:16:00.156 +02:00 [INF] Content root path: C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\bin\Debug\netcoreapp3.1
+2020-07-26 10:16:00.157 +02:00 [DBG] Hosting started
+2020-07-26 10:17:04.057 +02:00 [DBG] Hosting starting
+2020-07-26 10:17:04.295 +02:00 [VRB] [MQTTServer] Starting...
+2020-07-26 10:17:04.370 +02:00 [ERR] [MQTTServer] StartAsync.LoadConfiguration MQTT Server...
+System.InvalidOperationException: Sequence contains no matching element
+   at void System.Linq.ThrowHelper.ThrowNoMatchException()
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+   at string Openluup.MqttBridge.Services.Mqtt.MQTTServer.GetSettingsParam(IEnumerable<IConfigurationSection> node, string nodeName) in C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\Services\Mqtt\MqttServer.cs:line 158
+   at async Task Openluup.MqttBridge.Services.Mqtt.MQTTServer.LoadConfigurationAsync() in C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\Services\Mqtt\MqttServer.cs:line 126
+2020-07-26 10:17:04.472 +02:00 [ERR] [MQTTServer] StartAsync.LoadConfiguration MQTT Server...
+System.InvalidOperationException: Sequence contains no matching element
+   at void System.Linq.ThrowHelper.ThrowNoMatchException()
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+   at string Openluup.MqttBridge.Services.Mqtt.MQTTServer.GetSettingsParam(IEnumerable<IConfigurationSection> node, string nodeName) in C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\Services\Mqtt\MqttServer.cs:line 158
+   at async Task Openluup.MqttBridge.Services.Mqtt.MQTTServer.LoadConfigurationAsync() in C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\Services\Mqtt\MqttServer.cs:line 126
+2020-07-26 10:17:04.492 +02:00 [ERR] [MQTTServer] StartAsync.LoadConfiguration MQTT Server...
+System.InvalidOperationException: Sequence contains no matching element
+   at void System.Linq.ThrowHelper.ThrowNoMatchException()
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+   at string Openluup.MqttBridge.Services.Mqtt.MQTTServer.GetSettingsParam(IEnumerable<IConfigurationSection> node, string nodeName) in C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\Services\Mqtt\MqttServer.cs:line 158
+   at async Task Openluup.MqttBridge.Services.Mqtt.MQTTServer.LoadConfigurationAsync() in C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\Services\Mqtt\MqttServer.cs:line 126
+2020-07-26 10:17:04.494 +02:00 [INF] [MQTTServer] MQTT Server is starting on port 1883...
+2020-07-26 10:17:07.661 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-07-26 10:17:07.661 +02:00 [INF] Hosting environment: Production
+2020-07-26 10:17:07.661 +02:00 [INF] Content root path: C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\bin\Debug\netcoreapp3.1
+2020-07-26 10:17:07.662 +02:00 [DBG] Hosting started
+2020-07-26 10:18:23.423 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:19:26.128 +02:00 [DBG] Hosting starting
+2020-07-26 10:19:26.361 +02:00 [VRB] [MQTTServer] Starting...
+2020-07-26 10:19:31.277 +02:00 [ERR] [MQTTServer] StartAsync.LoadConfiguration MQTT Server...
+System.InvalidOperationException: Sequence contains no matching element
+   at void System.Linq.ThrowHelper.ThrowNoMatchException()
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+   at string Openluup.MqttBridge.Services.Mqtt.MQTTServer.GetSettingsParam(IEnumerable<IConfigurationSection> node, string nodeName) in C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\Services\Mqtt\MqttServer.cs:line 155
+   at async Task Openluup.MqttBridge.Services.Mqtt.MQTTServer.LoadConfigurationAsync() in C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\Services\Mqtt\MqttServer.cs:line 123
+2020-07-26 10:19:32.735 +02:00 [ERR] [MQTTServer] StartAsync.LoadConfiguration MQTT Server...
+System.InvalidOperationException: Sequence contains no matching element
+   at void System.Linq.ThrowHelper.ThrowNoMatchException()
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+   at string Openluup.MqttBridge.Services.Mqtt.MQTTServer.GetSettingsParam(IEnumerable<IConfigurationSection> node, string nodeName) in C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\Services\Mqtt\MqttServer.cs:line 155
+   at async Task Openluup.MqttBridge.Services.Mqtt.MQTTServer.LoadConfigurationAsync() in C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\Services\Mqtt\MqttServer.cs:line 123
+2020-07-26 10:19:34.534 +02:00 [ERR] [MQTTServer] StartAsync.LoadConfiguration MQTT Server...
+System.InvalidOperationException: Sequence contains no matching element
+   at void System.Linq.ThrowHelper.ThrowNoMatchException()
+   at TSource System.Linq.Enumerable.First<TSource>(IEnumerable<TSource> source, Func<TSource, bool> predicate)
+   at string Openluup.MqttBridge.Services.Mqtt.MQTTServer.GetSettingsParam(IEnumerable<IConfigurationSection> node, string nodeName) in C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\Services\Mqtt\MqttServer.cs:line 155
+   at async Task Openluup.MqttBridge.Services.Mqtt.MQTTServer.LoadConfigurationAsync() in C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\Services\Mqtt\MqttServer.cs:line 123
+2020-07-26 10:19:34.538 +02:00 [INF] [MQTTServer] MQTT Server is starting on port 1883...
+2020-07-26 10:19:35.124 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-07-26 10:19:35.168 +02:00 [INF] Hosting environment: Production
+2020-07-26 10:19:35.170 +02:00 [INF] Content root path: C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\bin\Debug\netcoreapp3.1
+2020-07-26 10:19:35.170 +02:00 [DBG] Hosting started
+2020-07-26 10:20:14.540 +02:00 [DBG] Hosting starting
+2020-07-26 10:20:14.649 +02:00 [VRB] [MQTTServer] Starting...
+2020-07-26 10:20:14.681 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: sonoff-pool Pool
+2020-07-26 10:20:14.684 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum DeHumidifier
+2020-07-26 10:20:14.685 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum DeHumidifier
+2020-07-26 10:20:14.690 +02:00 [INF] [MQTTServer] MQTT Server is starting on port 1883...
+2020-07-26 10:20:14.818 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-07-26 10:20:14.870 +02:00 [INF] Hosting environment: Production
+2020-07-26 10:20:14.872 +02:00 [INF] Content root path: C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\bin\Debug\netcoreapp3.1
+2020-07-26 10:20:14.873 +02:00 [DBG] Hosting started
+2020-07-26 10:20:27.419 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:22:38.424 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:24:03.400 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:24:32.481 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=24.3&RunAsync=1 2
+2020-07-26 10:24:50.579 +02:00 [DBG] Hosting starting
+2020-07-26 10:24:50.796 +02:00 [VRB] [MQTTServer] Starting...
+2020-07-26 10:24:50.816 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: sonoff-pool Pool
+2020-07-26 10:24:50.818 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum DeHumidifier
+2020-07-26 10:24:50.819 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum DeHumidifier
+2020-07-26 10:24:50.820 +02:00 [INF] [MQTTServer] MQTT Server is starting on port 1883...
+2020-07-26 10:24:50.933 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-07-26 10:24:50.934 +02:00 [INF] Hosting environment: Production
+2020-07-26 10:24:50.934 +02:00 [INF] Content root path: C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\bin\Debug\netcoreapp3.1
+2020-07-26 10:24:50.934 +02:00 [DBG] Hosting started
+2020-07-26 10:24:56.745 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:25:22.018 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - {"OFF
+2020-07-26 10:26:30.697 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:26:30.709 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=24.3&RunAsync=1 2
+2020-07-26 10:26:32.179 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=24.3&RunAsync=1 2
+2020-07-26 10:26:32.182 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - {"OFF
+2020-07-26 10:26:35.719 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:26:36.225 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - OFF
+2020-07-26 10:26:36.239 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=24.3&RunAsync=1 2
+2020-07-26 10:26:36.279 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=OFF&RunAsync=1 2
+2020-07-26 10:26:50.756 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:26:51.332 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - OFF
+2020-07-26 10:26:51.346 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=24.3&RunAsync=1 2
+2020-07-26 10:26:54.801 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=OFF&RunAsync=1 2
+2020-07-26 10:27:06.342 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:27:06.388 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=24.3&RunAsync=1 2
+2020-07-26 10:27:06.388 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - OFF
+2020-07-26 10:27:06.427 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=OFF&RunAsync=1 2
+2020-07-26 10:27:21.430 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:27:21.481 +02:00 [DBG] HttpMessageHandler expired after 120000ms for client 'Luup'
+2020-07-26 10:27:21.481 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - OFF
+2020-07-26 10:27:23.124 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=24.3&RunAsync=1 2
+2020-07-26 10:27:23.323 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=OFF&RunAsync=1 2
+2020-07-26 10:27:31.535 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:27:31.659 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0435ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:27:36.500 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:27:36.548 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=24.3&RunAsync=1 2
+2020-07-26 10:27:36.557 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - OFF
+2020-07-26 10:27:36.621 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=OFF&RunAsync=1 2
+2020-07-26 10:27:41.773 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:27:41.775 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0235ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:27:51.597 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:27:51.632 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - OFF
+2020-07-26 10:27:51.647 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=24.3&RunAsync=1 2
+2020-07-26 10:27:51.676 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=OFF&RunAsync=1 2
+2020-07-26 10:27:51.794 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:27:51.803 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 1.2265ms - processed: 1 items - remaining: 0 items
+2020-07-26 10:28:06.664 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:28:06.709 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=24.3&RunAsync=1 2
+2020-07-26 10:28:06.710 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - OFF
+2020-07-26 10:28:06.751 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=OFF&RunAsync=1 2
+2020-07-26 10:28:26.943 +02:00 [DBG] Hosting starting
+2020-07-26 10:28:27.014 +02:00 [VRB] [MQTTServer] Starting...
+2020-07-26 10:28:27.037 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: sonoff-pool Pool
+2020-07-26 10:28:27.039 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum DeHumidifier
+2020-07-26 10:28:27.040 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum DeHumidifier
+2020-07-26 10:28:27.041 +02:00 [INF] [MQTTServer] MQTT Server is starting on port 1883...
+2020-07-26 10:28:27.144 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-07-26 10:28:27.170 +02:00 [INF] Hosting environment: Production
+2020-07-26 10:28:27.171 +02:00 [INF] Content root path: C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\bin\Debug\netcoreapp3.1
+2020-07-26 10:28:27.176 +02:00 [DBG] Hosting started
+2020-07-26 10:28:32.283 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:28:33.267 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=24.3&RunAsync=1 2
+2020-07-26 10:28:33.267 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - OFF
+2020-07-26 10:28:33.302 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=Off&RunAsync=1 2
+2020-07-26 10:28:47.330 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:28:47.379 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=24.3&RunAsync=1 2
+2020-07-26 10:28:47.380 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - OFF
+2020-07-26 10:28:47.410 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=Off&RunAsync=1 2
+2020-07-26 10:29:02.381 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:29:02.410 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - OFF
+2020-07-26 10:29:03.344 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=24.3&RunAsync=1 2
+2020-07-26 10:29:03.512 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=Off&RunAsync=1 2
+2020-07-26 10:29:17.434 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":24.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:29:17.487 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=24.3&RunAsync=1 2
+2020-07-26 10:29:17.488 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - OFF
+2020-07-26 10:29:17.519 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=Off&RunAsync=1 2
+2020-07-26 10:29:32.164 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":28.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:29:32.240 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=28.3&RunAsync=1 2
+2020-07-26 10:29:32.242 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - ON
+2020-07-26 10:29:32.301 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=HeatOn&RunAsync=1 2
+2020-07-26 10:29:47.269 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":28.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:29:47.305 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - ON
+2020-07-26 10:29:47.318 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=28.3&RunAsync=1 2
+2020-07-26 10:29:47.356 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=HeatOn&RunAsync=1 2
+2020-07-26 10:30:02.324 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":28.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:30:02.371 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - ON
+2020-07-26 10:30:03.621 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=28.3&RunAsync=1 2
+2020-07-26 10:30:03.839 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=HeatOn&RunAsync=1 2
+2020-07-26 10:30:24.676 +02:00 [DBG] Hosting starting
+2020-07-26 10:30:24.741 +02:00 [VRB] [MQTTServer] Starting...
+2020-07-26 10:30:24.760 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: sonoff-pool Pool
+2020-07-26 10:30:24.761 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum DeHumidifier
+2020-07-26 10:30:24.761 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum DeHumidifier
+2020-07-26 10:30:24.762 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum Pool
+2020-07-26 10:30:24.763 +02:00 [INF] [MQTTServer] MQTT Server is starting on port 1883...
+2020-07-26 10:30:24.855 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-07-26 10:30:24.856 +02:00 [INF] Hosting environment: Production
+2020-07-26 10:30:24.870 +02:00 [INF] Content root path: C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\bin\Debug\netcoreapp3.1
+2020-07-26 10:30:24.870 +02:00 [DBG] Hosting started
+2020-07-26 10:30:31.691 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":28.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:30:32.556 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=28.3&RunAsync=1 2
+2020-07-26 10:30:32.559 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - ON
+2020-07-26 10:30:32.622 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=HeatOn&RunAsync=1 2
+2020-07-26 10:30:46.775 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":28.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:30:46.824 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=28.3&RunAsync=1 2
+2020-07-26 10:30:46.827 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - ON
+2020-07-26 10:30:46.874 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=HeatOn&RunAsync=1 2
+2020-07-26 10:31:01.842 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":28.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:31:01.872 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - ON
+2020-07-26 10:31:03.967 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=28.3&RunAsync=1 2
+2020-07-26 10:31:04.169 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=HeatOn&RunAsync=1 2
+2020-07-26 10:31:16.896 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":28.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:31:16.952 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=28.3&RunAsync=1 2
+2020-07-26 10:31:16.955 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - ON
+2020-07-26 10:31:16.995 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=HeatOn&RunAsync=1 2
+2020-07-26 10:31:32.008 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":28.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:31:32.066 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=28.3&RunAsync=1 2
+2020-07-26 10:31:32.067 +02:00 [VRB] [MQTTServer] MQTT MessageReceived and processed...
+[tasmota-dehum] - stat/sonoff/POWER - ON
+2020-07-26 10:31:32.124 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=HeatOn&RunAsync=1 2
+2020-07-26 10:33:50.805 +02:00 [DBG] Hosting starting
+2020-07-26 10:33:50.952 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: sonoff-pool Pool
+2020-07-26 10:33:50.954 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum DeHumidifier
+2020-07-26 10:33:50.954 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum DeHumidifier
+2020-07-26 10:33:50.955 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum Pool
+2020-07-26 10:33:50.955 +02:00 [INF] [MQTTServer] Broker is starting on port 1883...
+2020-07-26 10:33:51.018 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-07-26 10:33:51.019 +02:00 [INF] Hosting environment: Production
+2020-07-26 10:33:51.019 +02:00 [INF] Content root path: C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\bin\Debug\netcoreapp3.1
+2020-07-26 10:33:51.019 +02:00 [DBG] Hosting started
+2020-07-26 10:36:36.297 +02:00 [DBG] Hosting starting
+2020-07-26 10:36:36.440 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: sonoff-pool
+2020-07-26 10:36:36.442 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum
+2020-07-26 10:36:36.442 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum
+2020-07-26 10:36:36.443 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum
+2020-07-26 10:36:36.443 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum
+2020-07-26 10:36:36.444 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum
+2020-07-26 10:36:36.444 +02:00 [INF] [MQTTServer] Broker is starting on port 1883...
+2020-07-26 10:36:36.507 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-07-26 10:36:36.516 +02:00 [INF] Hosting environment: Production
+2020-07-26 10:36:36.517 +02:00 [INF] Content root path: C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\bin\Debug\netcoreapp3.1
+2020-07-26 10:36:36.519 +02:00 [DBG] Hosting started
+2020-07-26 10:37:05.837 +02:00 [DBG] Hosting starting
+2020-07-26 10:37:05.950 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: sonoff-pool
+2020-07-26 10:37:05.952 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum
+2020-07-26 10:37:05.953 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum
+2020-07-26 10:37:05.953 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum
+2020-07-26 10:37:05.954 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum
+2020-07-26 10:37:05.954 +02:00 [VRB] [MQTTServer] MQTT Client Configuration loaded: tasmota-dehum
+2020-07-26 10:37:05.955 +02:00 [INF] [MQTTServer] Broker is starting on port 1883...
+2020-07-26 10:37:06.077 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-07-26 10:37:06.088 +02:00 [INF] Hosting environment: Production
+2020-07-26 10:37:06.088 +02:00 [INF] Content root path: C:\Work\github\dbochicchio\openluup-mqttbridge\Openluup.MqttBridge\Luup.MqttBridge\bin\Debug\netcoreapp3.1
+2020-07-26 10:37:06.088 +02:00 [DBG] Hosting started
+2020-07-26 10:37:18.761 +02:00 [VRB] [MQTTServer] Message Received...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":29.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:37:18.891 +02:00 [VRB] [MQTTServer] Processed message: got 29.3
+2020-07-26 10:37:18.892 +02:00 [VRB] Matched value
+2020-07-26 10:37:19.877 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=29.3&RunAsync=1 2
+2020-07-26 10:37:19.881 +02:00 [VRB] [MQTTServer] Message Received...
+[tasmota-dehum] - stat/sonoff/POWER - ON
+2020-07-26 10:37:19.882 +02:00 [VRB] [MQTTServer] Processed message: got ON - expected 0 - matched: false
+2020-07-26 10:37:19.882 +02:00 [VRB] [MQTTServer] Processed message: got ON - expected 1 - matched: true
+2020-07-26 10:37:19.882 +02:00 [VRB] [MQTTServer] Processed message: got ON - expected HeatOn - matched: true
+2020-07-26 10:37:19.882 +02:00 [VRB] [MQTTServer] Processed message: got ON - expected Off - matched: false
+2020-07-26 10:37:19.882 +02:00 [VRB] Matched value
+2020-07-26 10:37:19.882 +02:00 [VRB] Matched value
+2020-07-26 10:37:19.941 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=499&serviceId=urn:upnp-org:serviceId:SwitchPower1&Variable=Status&Value=1&RunAsync=1 2
+2020-07-26 10:37:19.972 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=HeatOn&RunAsync=1 2
+2020-07-26 10:37:37.528 +02:00 [VRB] [MQTTServer] Message Received...
+[sonoff-pool] - tele/tasmota/SENSOR - {"Time":"2020-07-26T08:21:19","DS18B20":{"Id":"02131D86D0AA","Temperature":25.3},"TSL2561":{"Illuminance":0.049},"SR04":{"Distance":45.421},"TempUnit":"C"}
+2020-07-26 10:37:37.533 +02:00 [VRB] [MQTTServer] Processed message: got 25.3
+2020-07-26 10:37:37.536 +02:00 [VRB] Matched value
+2020-07-26 10:37:37.602 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=501&serviceId=urn:upnp-org:serviceId:TemperatureSensor1&Variable=CurrentTemperature&Value=25.3&RunAsync=1 2
+2020-07-26 10:37:37.604 +02:00 [VRB] [MQTTServer] Message Received...
+[tasmota-dehum] - stat/sonoff/POWER - OFF
+2020-07-26 10:37:37.605 +02:00 [VRB] [MQTTServer] Processed message: got OFF - expected HeatOn - matched: false
+2020-07-26 10:37:37.605 +02:00 [VRB] [MQTTServer] Processed message: got OFF - expected Off - matched: true
+2020-07-26 10:37:37.605 +02:00 [VRB] [MQTTServer] Processed message: got OFF - expected 0 - matched: true
+2020-07-26 10:37:37.605 +02:00 [VRB] [MQTTServer] Processed message: got OFF - expected 1 - matched: false
+2020-07-26 10:37:37.606 +02:00 [VRB] Matched value
+2020-07-26 10:37:37.606 +02:00 [VRB] Matched value
+2020-07-26 10:37:37.647 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=486&serviceId=urn:upnp-org:serviceId:HVAC_UserOperatingMode1&Variable=ModeTarget&Value=Off&RunAsync=1 2
+2020-07-26 10:37:37.738 +02:00 [VRB] [LuupWrapper] Calling Uri: http://127.0.0.1:3480/data_request?id=variableset&output_format=json&DeviceNum=499&serviceId=urn:upnp-org:serviceId:SwitchPower1&Variable=Status&Value=0&RunAsync=1 2
+2020-07-26 10:39:18.926 +02:00 [DBG] HttpMessageHandler expired after 120000ms for client 'Luup'
+2020-07-26 10:39:28.933 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:39:28.936 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0296ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:39:38.953 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:39:38.953 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0215ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:39:48.974 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:39:48.975 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0248ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:39:59.005 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:39:59.005 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0183ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:40:09.012 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:40:09.012 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0205ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:40:19.035 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:40:19.036 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0191ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:40:29.059 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:40:29.060 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0243ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:40:39.092 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:40:39.093 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0148ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:40:49.111 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:40:49.112 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0175ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:40:59.124 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:40:59.124 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0229ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:41:09.135 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:41:09.135 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0181ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:41:19.150 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:41:19.151 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0258ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:41:29.160 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:41:29.160 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0261ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:41:39.166 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:41:39.167 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0914ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:41:49.178 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:41:49.178 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0172ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:41:59.182 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:41:59.183 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0198ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:42:09.195 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:42:09.196 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0257ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:42:19.220 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:42:19.220 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0306ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:42:29.222 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:42:29.222 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0225ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:42:39.235 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:42:39.235 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0244ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:42:49.248 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:42:49.248 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0219ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:42:59.265 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:42:59.265 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.027ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:43:09.276 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:43:09.277 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0305ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:43:19.289 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:43:19.290 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0314ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:43:29.304 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:43:29.304 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0222ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:43:39.317 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:43:39.317 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0034ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:43:49.337 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:43:49.337 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0045ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:43:59.346 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:43:59.346 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0098ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:44:09.354 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:44:09.354 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0017ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:44:19.367 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:44:19.367 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0016ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:44:29.368 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:44:29.368 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0016ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:44:39.376 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:44:39.376 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0018ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:44:49.393 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:44:49.393 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0015ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:44:59.417 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:44:59.418 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0024ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:45:09.446 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:45:09.446 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0012ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:45:19.456 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:45:19.457 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0013ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:45:29.467 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:45:29.467 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0015ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:45:39.483 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:45:39.484 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0016ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:45:49.495 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:45:49.495 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0016ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:45:59.507 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:45:59.507 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0013ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:46:09.520 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:46:09.520 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.002ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:46:19.539 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:46:19.540 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0018ms - processed: 0 items - remaining: 1 items
+2020-07-26 10:46:29.559 +02:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2020-07-26 10:46:29.566 +02:00 [DBG] Ending HttpMessageHandler cleanup cycle after 6.7922ms - processed: 1 items - remaining: 0 items
