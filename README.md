@@ -1,6 +1,7 @@
 # MQTT Bridge for Luup
-This is a MQTT Bridge for Openluup and Mios'Vera Platform (Luup engine).
-This could help integration with other ecosystems (Tasmota, Shelly, Home Assistant) with an external process, running indendpently from your Vera/Openluup installation.
+This is a MQTT Bridge for Openluup and Mios' Vera Platform (Luup engine).
+This could help integration with other ecosystems (Tasmota, Shelly, Home Assistant) using an external process, running indendpently from your Vera/Openluup installation. It's fast, lightweight and it's not crippling your Luup engine stability.
+Right now, it's only receiving messages. Sending will be implemented soon.
 
 ***Vera early beta. Use at your own risk.***
 
@@ -17,7 +18,7 @@ Remove `-r linux-x64` if you want to build a portable app. It's completely fine 
 
 The application binary will be published under `bin\Release\netcoreapp3.1\linux-x64\publish\`.
 All the files here can be copied to your machine. The executable name is `Luup.MqttBridge` (.exe on Windows) and needs permissions to execute.
-You can run the application directly.
+You can run the application directly (ie from another process).
 Refer to your own preferred operating system on how to transform and run this at startup or as service. Systemd under Linux is supported.
 
 # First configuration
@@ -116,10 +117,10 @@ In `Luup` section specify your Vera/Openluup IP and port.
 `Devices` section has your mappings. You can map a message to different devices, use a part of the payload, or mix and match.
 
 Standard configuration must include:
-- *ClientID*: the broker filters the messages by this value. Be sure to set the device client ID, as set in your device;
-- *TopicName*: the MQTT topic (case insensitive)
-- *DeviceID*: Vera/Openluup deviceID
-- *Service*: Luup service ID
+- *ClientID*: the broker filters the messages by this value. Be sure to set the device client ID, as set in your device.
+- *TopicName*: the MQTT topic (case insensitive).
+- *DeviceID*: Vera/Openluup deviceID.
+- *Service*: Luup service ID.
 - *Variable*: The variable to update with the computed value.
 
 If your device send a **fixed value**, you should specify:
@@ -127,7 +128,7 @@ If your device send a **fixed value**, you should specify:
 - *Value*: The value to be sent as the computed value.
 
 If your device send a **dynamic value**, you should specify:
-- TopicPath: specify the path,in JSONPath format. i.e. "DS18B20.Temperature" means look for `DS18B20` then get the value from `Temperature` node.
+- TopicPath: specify the path,in JSONPath format. i.e. "DS18B20.Temperature" means to search for a `DS18B20` node, then get the value from `Temperature` node. Values are preserved and sent as received.
 
 Use one or another. If both are specified, the first (fixed value) wins.
 
