@@ -1,12 +1,15 @@
 # MQTT Bridge for Luup
 This is a MQTT Bridge for Openluup and Mios' Vera Platform (Luup engine).
+
 This could help integration with other ecosystems (Tasmota, Shelly, Home Assistant) using an external process, running indendpently from your Vera/Openluup installation. It's fast, lightweight and it's not crippling your Luup engine stability.
+
 Right now, it's only receiving messages. Sending will be implemented soon.
 
 ***Vera early beta. Use at your own risk.***
 
 # Installation and minimal requirements
 The broker runs on .NET Core 3.1. Linux, Windows or macOs are OK. See [Microsoft docs](https://docs.microsoft.com/en-us/dotnet/core/install/linux) for more information on running it on Linux. Raspberry are perfectly supported, as well as Docker.
+
 You can build it directly from source. Just download the files, install .NET Core SDK and then run, inside the directory:
 
 ```
@@ -19,6 +22,7 @@ Remove `-r linux-x64` if you want to build a portable app. It's completely fine 
 The application binary will be published under `bin\Release\netcoreapp3.1\linux-x64\publish\`.
 All the files here can be copied to your machine. The executable name is `Luup.MqttBridge` (.exe on Windows) and needs permissions to execute.
 You can run the application directly (ie from another process).
+
 Refer to your own preferred operating system on how to transform and run this at startup or as service. Systemd under Linux is supported.
 
 # First configuration
