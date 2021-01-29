@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Openluup.MqttBridge.Services;
-using Openluup.MqttBridge.Services.Mqtt;
+using Luup.MqttBridge.Services;
+using Luup.MqttBridge.Services.Mqtt;
 using Polly;
 using Polly.Extensions.Http;
 using Serilog;
@@ -14,7 +14,7 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Openluup.MqttBridge
+namespace Luup.MqttBridge
 {
 	internal class Program
 	{
@@ -40,17 +40,18 @@ namespace Openluup.MqttBridge
 				.ConfigureServices((hostContext, services) =>
 				{
 					services.AddOptions();
-					services.AddHostedService<MQTTServer>();
 					services.AddSingleton<LuupWrapper>();
+					services.AddHostedService<MQTTServer>();
+
 
 					// HTTP CLIENTS
 					services.AddHttpClient(NamedHttpClients.LuupClient, client =>
-					{
-						//client.DefaultRequestVersion = new Version(2, 0); // HTTP 2
-						client.Timeout = new TimeSpan(0, 0, 10);
-						client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763");
-						client.DefaultRequestHeaders.Add("Upgrade-Insecure-Requests", "1");
-					})
+						{
+							//client.DefaultRequestVersion = new Version(2, 0); // HTTP 2
+							client.Timeout = new TimeSpan(0, 0, 10);
+							client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4204.0 Safari/537.36 Edg/86.0.587.0");
+							client.DefaultRequestHeaders.Add("Upgrade-Insecure-Requests", "1");
+						})
 						.AddPolicyHandler(Policy.BulkheadAsync<HttpResponseMessage>(1, 500))
 						.AddPolicyHandler(HttpPolicyExtensions
 											.HandleTransientHttpError()
@@ -88,12 +89,12 @@ namespace Openluup.MqttBridge
 							fileSizeLimitBytes: 1_000_000) // 1 MB
 						.WriteTo.Console(theme: AnsiConsoleTheme.Code)
 #if DEBUG
-			.MinimumLevel.Verbose()
+						.MinimumLevel.Verbose()
 						.MinimumLevel.Override("System.Net.Http.HttpClient", Serilog.Events.LogEventLevel.Error)
 #else
-			.MinimumLevel.Information()
-			.MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Error)
-			.MinimumLevel.Override("System", Serilog.Events.LogEventLevel.Error)
+						.MinimumLevel.Information()
+						.MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Error)
+						.MinimumLevel.Override("System", Serilog.Events.LogEventLevel.Error)
 #endif
 				;
 				});

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Openluup.MqttBridge.Model
+namespace Luup.MqttBridge.Model
 {
 	internal class MqttDevice
 	{

@@ -3,7 +3,7 @@ using MQTTnet;
 using MQTTnet.Protocol;
 using MQTTnet.Server;
 using Newtonsoft.Json.Linq;
-using Openluup.MqttBridge.Model;
+using Luup.MqttBridge.Model;
 using Serilog;
 using System;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Openluup.MqttBridge.Services.Mqtt
+namespace Luup.MqttBridge.Services.Mqtt
 {
 	public class MQTTServer : BaseService
 	{
@@ -73,6 +73,8 @@ namespace Openluup.MqttBridge.Services.Mqtt
 					}
 
 					CancelIfNeeded();
+
+					await Task.CompletedTask;
 				});
 
 			var options = optionsBuilder.Build() as MqttServerOptions;

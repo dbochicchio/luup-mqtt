@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace Openluup.MqttBridge.Services
+namespace Luup.MqttBridge.Services
 {
 	public class LuupWrapper
 	{

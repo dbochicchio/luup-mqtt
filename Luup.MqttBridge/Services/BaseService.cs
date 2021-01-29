@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Openluup.MqttBridge.Services
+namespace Luup.MqttBridge.Services
 {
 	public abstract class BaseService : IService
 	{
@@ -13,7 +13,7 @@ namespace Openluup.MqttBridge.Services
 
 		protected void CancelIfNeeded()
 		{
-			if (CancellationToken != null && CancellationToken.IsCancellationRequested)
+			if (CancellationToken.IsCancellationRequested)
 				CancellationToken.ThrowIfCancellationRequested();
 		}
 	}

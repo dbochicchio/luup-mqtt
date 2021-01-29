@@ -5,8 +5,8 @@ This could help integration with other ecosystems (Tasmota, Shelly, Home Assista
 ***Vera early beta. Use at your own risk.***
 
 # Installation and minimal requirements
-The broker runs on .NET Core 3.1. Linux, Windows or macOs are OK. See [Microsoft docs](https://docs.microsoft.com/en-us/dotnet/core/install/linux) for more information on running it on Linux. Raspberry are perfectly supported, as well as Docker.
-You can build it directly from source. Just download the files, install .NET Core SDK and then run, inside the directory:
+The broker runs on .NET 5. Linux, Windows or macOs are OK. See [Microsoft docs](https://docs.microsoft.com/en-us/dotnet/core/install/linux) for more information on running it on Linux. Raspberries are perfectly supported, as well as Docker.
+You can build it directly from source. Just download the files, install .NET SDK and then run, inside the directory:
 
 ```
 dotnet build
@@ -15,9 +15,12 @@ dotnet publish -c Release -r linux-x64
 
 Remove `-r linux-x64` if you want to build a portable app. It's completely fine to build it on Windows and publish on Linux, or macOs, or whatever combination you like.
 
-The application binary will be published under `bin\Release\netcoreapp3.1\linux-x64\publish\`.
+The application binary will be published under `bin\Release\net5.1\linux-x64\publish\`.
+
 All the files here can be copied to your machine. The executable name is `Luup.MqttBridge` (.exe on Windows) and needs permissions to execute.
+
 You can run the application directly.
+
 Refer to your own preferred operating system on how to transform and run this at startup or as service. Systemd under Linux is supported.
 
 # First configuration
@@ -110,7 +113,7 @@ Here's an example of configuration:
 }
 ```
 
-It's self explanatory. Go to `MQTT` section and put your credentials. These will be used by your client devices as well.
+It's self explanatory. Go to `MQTT` section and put in your credentials. These will be used by your client devices as well.
 In `Luup` section specify your Vera/Openluup IP and port.
 
 `Devices` section has your mappings. You can map a message to different devices, use a part of the payload, or mix and match.
@@ -135,7 +138,7 @@ Use one or another. If both are specified, the first (fixed value) wins.
 If you need to represent virtual devices that performs HTTP calls, you need my other plug-in.
 This is 100% compatible with Vera UI/Altui, mobile apps and act as a standard control in that sense.
 
-[More info](https://github.com/dbochicchio/vera/tree/master/VirtualDevices/)
+[More info](https://github.com/dbochicchio/vera-VirtualDevices/)
 
 # Logging
 By default, verbose logging is enabled. Logs are rotated daily in `_logs`. If you want to disable verbose logging, just uncomment the latest lines from the default config file.
