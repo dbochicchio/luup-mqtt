@@ -1,8 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Luup.MqttBridge.Services;
+using Luup.MqttBridge.Services.Mqtt;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Luup.MqttBridge.Services;
-using Luup.MqttBridge.Services.Mqtt;
 using Polly;
 using Polly.Extensions.Http;
 using Serilog;
@@ -10,7 +10,6 @@ using Serilog.Sinks.SystemConsole.Themes;
 using System;
 using System.IO;
 using System.Net.Http;
-using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -19,7 +18,7 @@ namespace Luup.MqttBridge
 	internal class Program
 	{
 		public static CancellationTokenSource CancellationToken { get; } = new CancellationTokenSource();
-		public static object HttpClientUserAgents { get; private set; }
+		public static Version Version => new Version(0, 30, 210109);
 
 		public static async Task Main(string[] args)
 		{
@@ -30,7 +29,7 @@ namespace Luup.MqttBridge
 			}
 			catch (Exception ex)
 			{
-				Console.WriteLine($"[{DateTime.Now.ToString("HH:mm:ss")} CON] FATAL: {ex.ToString()}");
+				Console.WriteLine($"[{DateTime.Now:HH:mm:ss} CON] v {Version} FATAL: {ex}");
 			}
 		}
 

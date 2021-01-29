@@ -1,14 +1,13 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Luup.MqttBridge.Model;
+using Microsoft.Extensions.Configuration;
 using MQTTnet;
 using MQTTnet.Protocol;
 using MQTTnet.Server;
 using Newtonsoft.Json.Linq;
-using Luup.MqttBridge.Model;
 using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -42,7 +41,7 @@ namespace Luup.MqttBridge.Services.Mqtt
 
 			await LoadConfigurationAsync();
 
-			Log.Information("[{where}] Broker is starting on port {port}...", nameof(MQTTServer), port);
+			Log.Information("[{where}] Broker is starting v {version} on port {port}...", nameof(MQTTServer), Program.Version, port);
 
 			mqttServer = new MqttFactory().CreateMqttServer();
 
