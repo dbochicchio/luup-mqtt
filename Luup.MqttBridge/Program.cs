@@ -98,7 +98,7 @@ namespace Luup.MqttBridge
 #endif
 				;
 				});
-		private static string GetCurrentPath() => Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+		private static string GetCurrentPath() => Path.GetDirectoryName(AppContext.BaseDirectory);
 	}
 
 	internal class NamedHttpClients
