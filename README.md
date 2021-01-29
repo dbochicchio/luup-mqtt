@@ -15,11 +15,11 @@ dotnet publish -c Release -r linux-x64
 
 Remove `-r linux-x64` if you want to build a portable app. It's completely fine to build it on Windows and publish on Linux, or macOs, or whatever combination you like.
 
-The application binary will be published under `bin\Release\net5.1\linux-x64\publish\`.
+The application binary will be published under `bin\Release\net5.0\linux-x64\publish\`.
 
 All the files here can be copied to your machine. The executable name is `Luup.MqttBridge` (.exe on Windows) and needs permissions to execute.
 
-You can run the application directly.
+You can run the application directly (ie from another process).
 
 Refer to your own preferred operating system on how to transform and run this at startup or as service. Systemd under Linux is supported.
 
