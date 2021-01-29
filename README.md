@@ -130,7 +130,7 @@ If your device send a **fixed value**, you should specify:
 - *Value*: The value to be sent as the computed value.
 
 If your device send a **dynamic value**, you should specify:
-- TopicPath: specify the path,in JSONPath format. i.e. "DS18B20.Temperature" means look for `DS18B20` then get the value from `Temperature` node.
+- TopicPath: specify the path,in JSONPath format. i.e. "DS18B20.Temperature" will search for `DS18B20` then get the value from `Temperature` node.
 
 Use one or another. If both are specified, the first (fixed value) wins.
 
