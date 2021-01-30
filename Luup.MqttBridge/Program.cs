@@ -18,7 +18,7 @@ namespace Luup.MqttBridge
 	internal class Program
 	{
 		public static CancellationTokenSource CancellationToken { get; } = new CancellationTokenSource();
-		public static Version Version => new Version(0, 31, 210109);
+		public static Version Version => new Version(0, 31, 210130);
 
 		public static async Task Main(string[] args)
 		{
@@ -54,7 +54,7 @@ namespace Luup.MqttBridge
 						.AddPolicyHandler(HttpPolicyExtensions
 											.HandleTransientHttpError()
 											.OrResult(msg => (int)msg.StatusCode >= 500)
-											.WaitAndRetryAsync(5, retryAttempt => TimeSpan.FromMilliseconds(Math.Pow(2, retryAttempt * double.Parse(hostContext.Configuration["luup:retryAttempt"] ?? "500")))));
+											.WaitAndRetryAsync(int.Parse(hostContext.Configuration["luup:retries"] ?? "5"), retryAttempt => TimeSpan.FromMilliseconds(Math.Pow(2, retryAttempt) * double.Parse(hostContext.Configuration["luup:retryAttemptTimeout"] ?? "500"))));
 
 				})
 				.ConfigureAppConfiguration((hostingContext, config) =>
