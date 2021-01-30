@@ -18,7 +18,7 @@ namespace Luup.MqttBridge
 	internal class Program
 	{
 		public static CancellationTokenSource CancellationToken { get; } = new CancellationTokenSource();
-		public static Version Version => new Version(0, 30, 210109);
+		public static Version Version => new Version(0, 31, 210109);
 
 		public static async Task Main(string[] args)
 		{
@@ -42,12 +42,11 @@ namespace Luup.MqttBridge
 					services.AddSingleton<LuupWrapper>();
 					services.AddHostedService<MQTTServer>();
 
-
 					// HTTP CLIENTS
 					services.AddHttpClient(NamedHttpClients.LuupClient, client =>
 						{
 							//client.DefaultRequestVersion = new Version(2, 0); // HTTP 2
-							client.Timeout = new TimeSpan(0, 0, 10);
+							client.Timeout = TimeSpan.FromMilliseconds(double.Parse(hostContext.Configuration["luup:timeout"] ?? "10000"));
 							client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4204.0 Safari/537.36 Edg/86.0.587.0");
 							client.DefaultRequestHeaders.Add("Upgrade-Insecure-Requests", "1");
 						})
@@ -55,7 +54,7 @@ namespace Luup.MqttBridge
 						.AddPolicyHandler(HttpPolicyExtensions
 											.HandleTransientHttpError()
 											.OrResult(msg => (int)msg.StatusCode >= 500)
-											.WaitAndRetryAsync(5, retryAttempt => TimeSpan.FromMilliseconds(Math.Pow(2, retryAttempt))));
+											.WaitAndRetryAsync(5, retryAttempt => TimeSpan.FromMilliseconds(Math.Pow(2, retryAttempt * double.Parse(hostContext.Configuration["luup:retryAttempt"] ?? "500")))));
 
 				})
 				.ConfigureAppConfiguration((hostingContext, config) =>
@@ -97,6 +96,7 @@ namespace Luup.MqttBridge
 #endif
 				;
 				});
+
 		private static string GetCurrentPath() => Path.GetDirectoryName(AppContext.BaseDirectory);
 	}
 

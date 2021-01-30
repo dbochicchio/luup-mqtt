@@ -11,6 +11,8 @@ namespace Luup.MqttBridge.Model
 		public string TopicName { get; set; }
 		public string TopicValue { get; set; }
 		public string TopicPath { get; set; }
+		public string AlternateTopicName { get; set; }
+		public string AlternateTopicPath { get; set; }
 		public string Service { get; set; }
 		public string Variable { get; set; }
 		public string Value { get; set; }

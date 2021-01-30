@@ -52,6 +52,9 @@ Here's an example of configuration:
 			"TopicName": "tele/tasmota/SENSOR",
 			"TopicPath": "DS18B20.Temperature",
 
+			"AlternateTopicName": "stat/tasmota/STATUS8",
+			"AlternateTopicPath": "StatusSNS.DS18B20.Temperature",
+
 			"DeviceID": 501,
 			"Service": "urn:upnp-org:serviceId:TemperatureSensor1",
 			"Variable": "CurrentTemperature"
@@ -125,18 +128,20 @@ In `Luup` section specify your Vera/Openluup IP and port.
 `Devices` section has your mappings. You can map a message to different devices, use a part of the payload, or mix and match.
 
 Standard configuration must include:
-- *ClientID*: the broker filters the messages by this value. Be sure to set the device client ID, as set in your device;
-- *TopicName*: the MQTT topic (case insensitive)
-- *DeviceID*: Vera/Openluup deviceID
-- *Service*: Luup service ID
+- *ClientID*: the broker filters the messages by this value. Be sure to set the device client ID, as set in your device. Use `*` if you want to only search for a topic.
+- *TopicName*: the MQTT topic (case insensitive).
+- *DeviceID*: Vera/Openluup deviceID.
+- *Service*: Luup service ID.
 - *Variable*: The variable to update with the computed value.
 
 If your device send a **fixed value**, you should specify:
 - *TopicValue*: if your device send a fixed value (ie `on`), specify the value. It's case insensitive.
 - *Value*: The value to be sent as the computed value.
+- *AlternateTopicValue*: same as above, but will check for an alternate topic.
 
 If your device send a **dynamic value**, you should specify:
-- TopicPath: specify the path,in JSONPath format. i.e. "DS18B20.Temperature" will search for `DS18B20` then get the value from `Temperature` node.
+- *TopicPath*: specify the path, in JSONPath format. i.e. "DS18B20.Temperature" will search for `DS18B20` then get the value from `Temperature` node.
+- *AlternateTopicPath*: same as above, but will look for a second path.
 
 Use one or another. If both are specified, the first (fixed value) wins.
 

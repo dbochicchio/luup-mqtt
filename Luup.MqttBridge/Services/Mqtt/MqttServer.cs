@@ -62,11 +62,12 @@ namespace Luup.MqttBridge.Services.Mqtt
 					if (context?.ClientId != null)
 					{
 						// handle multiple devices mapped to the same payload
-						var clients = devices.Where(x => x.ClientId == context.ClientId);
+						var clients = devices.Where(x => x.ClientId == context.ClientId || x.ClientId == "*");
 
 						Parallel.ForEach(clients, async (device) =>
 						{
-							if (device.TopicName.Equals(context.ApplicationMessage.Topic, StringComparison.InvariantCultureIgnoreCase))
+							if (device.TopicName.Equals(context.ApplicationMessage.Topic, StringComparison.InvariantCultureIgnoreCase)
+								|| device.AlternateTopicName?.Equals(context.ApplicationMessage.Topic, StringComparison.InvariantCultureIgnoreCase) == true)
 								await ProcessMessageAsync(device, context.ApplicationMessage);
 						});
 					}
@@ -93,7 +94,7 @@ namespace Luup.MqttBridge.Services.Mqtt
 			string value;
 			bool matched;
 
-			// check for exact match
+			// topic path
 			if (string.IsNullOrEmpty(device.TopicPath))
 			{
 				var messageValue = applicationMessage.ConvertPayloadToString();
@@ -102,11 +103,16 @@ namespace Luup.MqttBridge.Services.Mqtt
 
 				Log.Verbose("[{where}] Processed message: got {messageValue} - expected {value} - matched: {matched}", nameof(MQTTServer), messageValue, value, matched);
 			}
+			// read the value from the payload, using the path
 			else
 			{
-				// read the value from the payload, using the path
-				var jsonObject = JObject.Parse(applicationMessage.ConvertPayloadToString());
-				value = (string)jsonObject.SelectToken(device.TopicPath);
+				var json = applicationMessage.ConvertPayloadToString();
+				var jsonObject = JObject.Parse(json);
+				value = device.TopicPath == "." ? json : (string)jsonObject.SelectToken(device.TopicPath);
+
+				if (!string.IsNullOrEmpty(device.AlternateTopicPath) && string.IsNullOrEmpty(value))
+					value = device.AlternateTopicPath == "." ? json : (string)jsonObject.SelectToken(device.AlternateTopicPath);
+
 				matched = true;
 
 				Log.Verbose("[{where}] Processed message: got {value}", nameof(MQTTServer), value);
@@ -114,7 +120,7 @@ namespace Luup.MqttBridge.Services.Mqtt
 
 			if (matched)
 			{
-				Log.Verbose("Matched value");
+				Log.Information("[{where}] Updating #{deviceID} - {service} / {var} - {value}", nameof(MQTTServer), device.DeviceID, device.Service, device.Variable, value);
 				await luupWrapper.UpdateVariablesAsync(device.DeviceID, device.Service, device.Variable, value);
 			}
 		}
@@ -137,6 +143,9 @@ namespace Luup.MqttBridge.Services.Mqtt
 						TopicName = GetSettingsParam(node, "TopicName"),
 						TopicValue = GetSettingsParam(node, "TopicValue"),
 						TopicPath = GetSettingsParam(node, "TopicPath"),
+
+						AlternateTopicName = GetSettingsParam(node, "AlternateTopicName"),
+						AlternateTopicPath = GetSettingsParam(node, "AlternateTopicPath"),
 
 						// vera/openluup
 						DeviceID = Convert.ToInt32(GetSettingsParam(node, "deviceID")),

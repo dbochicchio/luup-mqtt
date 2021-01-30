@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Serilog;
+using System;
 using System.Globalization;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -27,10 +28,17 @@ namespace Luup.MqttBridge.Services
 		{
 			var uri = $"http://{luupIP}:{port}/data_request?id={action}&output_format=json&DeviceNum={deviceID}&serviceId={serviceID}&{actionCommand}={HttpUtility.UrlEncode(command)}&{commandParameter}={HttpUtility.UrlEncode(value)}&RunAsync=1";
 
-			var httpClient = httpClientFactory.CreateClient(NamedHttpClients.LuupClient);
-			var result = await httpClient.GetStringAsync(uri).ConfigureAwait(false);
+			try
+			{
+				var httpClient = httpClientFactory.CreateClient(NamedHttpClients.LuupClient);
+				var result = await httpClient.GetStringAsync(uri).ConfigureAwait(false);
 
-			Log.Verbose("[{where}] Calling Uri: {uri} {l}", nameof(LuupWrapper), uri, result.Length);
+				Log.Verbose("[{where}] {cmd}: {uri} - {res}", nameof(LuupWrapper), nameof(RunCommandAsync), uri, result);
+			}
+			catch (Exception ex)
+			{
+				Log.Error(ex, "[{where}] {cmd}: {uri}", nameof(LuupWrapper), nameof(RunCommandAsync), uri);
+			}
 		}
 
 	}
